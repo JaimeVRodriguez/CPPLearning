@@ -131,44 +131,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named variables
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+variables: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 variables
+.PHONY : variables
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+variables/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/build
+.PHONY : variables/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named helloWorld
 
-.PHONY : main.o
+# Build rule for target.
+helloWorld: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloWorld
+.PHONY : helloWorld
+
+# fast build rule for target.
+helloWorld/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
+.PHONY : helloWorld/fast
+
+helloWorld.o: helloWorld.cpp.o
+
+.PHONY : helloWorld.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+helloWorld.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.o
+.PHONY : helloWorld.cpp.o
 
-main.i: main.cpp.i
+helloWorld.i: helloWorld.cpp.i
 
-.PHONY : main.i
+.PHONY : helloWorld.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+helloWorld.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.i
+.PHONY : helloWorld.cpp.i
 
-main.s: main.cpp.s
+helloWorld.s: helloWorld.cpp.s
 
-.PHONY : main.s
+.PHONY : helloWorld.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+helloWorld.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.s
+.PHONY : helloWorld.cpp.s
+
+variables.o: variables.cpp.o
+
+.PHONY : variables.o
+
+# target to build an object file
+variables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/variables.cpp.o
+.PHONY : variables.cpp.o
+
+variables.i: variables.cpp.i
+
+.PHONY : variables.i
+
+# target to preprocess a source file
+variables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/variables.cpp.i
+.PHONY : variables.cpp.i
+
+variables.s: variables.cpp.s
+
+.PHONY : variables.s
+
+# target to generate assembly for a file
+variables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/variables.cpp.s
+.PHONY : variables.cpp.s
 
 # Help Target
 help:
@@ -178,10 +218,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... helloWorld"
+	@echo "... variables"
+	@echo "... helloWorld.o"
+	@echo "... helloWorld.i"
+	@echo "... helloWorld.s"
+	@echo "... variables.o"
+	@echo "... variables.i"
+	@echo "... variables.s"
 .PHONY : help
 
 

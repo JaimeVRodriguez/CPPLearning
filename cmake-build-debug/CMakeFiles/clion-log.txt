@@ -1,5 +1,6 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jaime/Coding/C++/LearnC++
-    -- src/main.cpp will be compiled to bin/main
+    -- src/helloWorld.cpp will be compiled to bin/helloWorld
+    -- src/variables.cpp will be compiled to bin/variables
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/jaime/Coding/C++/LearnC++/cmake-build-debug

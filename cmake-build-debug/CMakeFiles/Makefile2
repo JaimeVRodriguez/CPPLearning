@@ -73,7 +73,8 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/variables.dir/all
+all: CMakeFiles/helloWorld.dir/all
 
 .PHONY : all
 
@@ -83,36 +84,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/variables.dir/clean
+clean: CMakeFiles/helloWorld.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/variables.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/variables.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target variables"
+.PHONY : CMakeFiles/variables.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/variables.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/variables.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/variables.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+variables: CMakeFiles/variables.dir/rule
 
-.PHONY : main
+.PHONY : variables
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/variables.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/clean
+.PHONY : CMakeFiles/variables.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/helloWorld.dir
+
+# All Build rule for target.
+CMakeFiles/helloWorld.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target helloWorld"
+.PHONY : CMakeFiles/helloWorld.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/helloWorld.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helloWorld.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/helloWorld.dir/rule
+
+# Convenience name for target.
+helloWorld: CMakeFiles/helloWorld.dir/rule
+
+.PHONY : helloWorld
+
+# clean rule for target.
+CMakeFiles/helloWorld.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/clean
+.PHONY : CMakeFiles/helloWorld.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="LearnC__"/>
+		<Option title="LearnC++"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -12,26 +12,6 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -79,29 +59,28 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main">
-				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+			<Target title="rebuild_cache">
 				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main/fast">
-				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helloWorld">
+				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/helloWorld" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -115,19 +94,39 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 helloWorld"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="helloWorld/fast">
+				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/helloWorld" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 helloWorld/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jaime/Coding/C++/LearnC++/main.cpp">
-			<Option target="main"/>
+		<Unit filename="/Users/jaime/Coding/C++/LearnC++/helloWorld.cpp">
+			<Option target="helloWorld"/>
 		</Unit>
 		<Unit filename="/Users/jaime/Coding/C++/LearnC++/variables.cpp">
 			<Option target="variables"/>
-			<Option target="main"/>
 		</Unit>
 		<Unit filename="/Users/jaime/Coding/C++/LearnC++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
