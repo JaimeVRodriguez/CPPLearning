@@ -1,6 +1,7 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/jaime/Coding/C++/LearnC++
     -- src/dataTypes.cpp will be compiled to bin/dataTypes
     -- src/helloWorld.cpp will be compiled to bin/helloWorld
+    -- src/strings.cpp will be compiled to bin/strings
     -- src/variables.cpp will be compiled to bin/variables
 -- Configuring done
 -- Generating done

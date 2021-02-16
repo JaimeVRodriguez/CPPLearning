@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/helloWorld.dir/dataTypes.cpp.o"
   "CMakeFiles/helloWorld.dir/helloWorld.cpp.o"
   "helloWorld"
   "helloWorld.pdb"

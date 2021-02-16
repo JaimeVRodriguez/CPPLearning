@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -144,6 +144,19 @@ variables/fast:
 .PHONY : variables/fast
 
 #=============================================================================
+# Target rules for targets named strings
+
+# Build rule for target.
+strings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 strings
+.PHONY : strings
+
+# fast build rule for target.
+strings/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/build
+.PHONY : strings/fast
+
+#=============================================================================
 # Target rules for targets named helloWorld
 
 # Build rule for target.
@@ -175,8 +188,6 @@ dataTypes.o: dataTypes.cpp.o
 
 # target to build an object file
 dataTypes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/dataTypes.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/dataTypes.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.o
 .PHONY : dataTypes.cpp.o
 
@@ -186,8 +197,6 @@ dataTypes.i: dataTypes.cpp.i
 
 # target to preprocess a source file
 dataTypes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/dataTypes.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/dataTypes.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.i
 .PHONY : dataTypes.cpp.i
 
@@ -197,8 +206,6 @@ dataTypes.s: dataTypes.cpp.s
 
 # target to generate assembly for a file
 dataTypes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/dataTypes.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/dataTypes.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.s
 .PHONY : dataTypes.cpp.s
 
@@ -228,6 +235,33 @@ helloWorld.s: helloWorld.cpp.s
 helloWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.s
 .PHONY : helloWorld.cpp.s
+
+strings.o: strings.cpp.o
+
+.PHONY : strings.o
+
+# target to build an object file
+strings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/strings.cpp.o
+.PHONY : strings.cpp.o
+
+strings.i: strings.cpp.i
+
+.PHONY : strings.i
+
+# target to preprocess a source file
+strings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/strings.cpp.i
+.PHONY : strings.cpp.i
+
+strings.s: strings.cpp.s
+
+.PHONY : strings.s
+
+# target to generate assembly for a file
+strings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/strings.cpp.s
+.PHONY : strings.cpp.s
 
 variables.o: variables.cpp.o
 
@@ -266,6 +300,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dataTypes"
 	@echo "... helloWorld"
+	@echo "... strings"
 	@echo "... variables"
 	@echo "... dataTypes.o"
 	@echo "... dataTypes.i"
@@ -273,6 +308,9 @@ help:
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
+	@echo "... strings.o"
+	@echo "... strings.i"
+	@echo "... strings.s"
 	@echo "... variables.o"
 	@echo "... variables.i"
 	@echo "... variables.s"
