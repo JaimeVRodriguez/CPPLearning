@@ -75,6 +75,7 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles/variables.dir/all
 all: CMakeFiles/helloWorld.dir/all
+all: CMakeFiles/dataTypes.dir/all
 
 .PHONY : all
 
@@ -86,6 +87,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/variables.dir/clean
 clean: CMakeFiles/helloWorld.dir/clean
+clean: CMakeFiles/dataTypes.dir/clean
 
 .PHONY : clean
 
@@ -96,12 +98,12 @@ clean: CMakeFiles/helloWorld.dir/clean
 CMakeFiles/variables.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target variables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=6,7,8 "Built target variables"
 .PHONY : CMakeFiles/variables.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/variables.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/variables.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/variables.dir/rule
@@ -123,12 +125,12 @@ CMakeFiles/variables.dir/clean:
 CMakeFiles/helloWorld.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target helloWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target helloWorld"
 .PHONY : CMakeFiles/helloWorld.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/helloWorld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helloWorld.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/helloWorld.dir/rule
@@ -142,6 +144,33 @@ helloWorld: CMakeFiles/helloWorld.dir/rule
 CMakeFiles/helloWorld.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/clean
 .PHONY : CMakeFiles/helloWorld.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dataTypes.dir
+
+# All Build rule for target.
+CMakeFiles/dataTypes.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target dataTypes"
+.PHONY : CMakeFiles/dataTypes.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dataTypes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dataTypes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/dataTypes.dir/rule
+
+# Convenience name for target.
+dataTypes: CMakeFiles/dataTypes.dir/rule
+
+.PHONY : dataTypes
+
+# clean rule for target.
+CMakeFiles/dataTypes.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/clean
+.PHONY : CMakeFiles/dataTypes.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

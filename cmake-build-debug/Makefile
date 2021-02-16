@@ -156,6 +156,52 @@ helloWorld/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
 .PHONY : helloWorld/fast
 
+#=============================================================================
+# Target rules for targets named dataTypes
+
+# Build rule for target.
+dataTypes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dataTypes
+.PHONY : dataTypes
+
+# fast build rule for target.
+dataTypes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/build
+.PHONY : dataTypes/fast
+
+dataTypes.o: dataTypes.cpp.o
+
+.PHONY : dataTypes.o
+
+# target to build an object file
+dataTypes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/dataTypes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/dataTypes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.o
+.PHONY : dataTypes.cpp.o
+
+dataTypes.i: dataTypes.cpp.i
+
+.PHONY : dataTypes.i
+
+# target to preprocess a source file
+dataTypes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/dataTypes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/dataTypes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.i
+.PHONY : dataTypes.cpp.i
+
+dataTypes.s: dataTypes.cpp.s
+
+.PHONY : dataTypes.s
+
+# target to generate assembly for a file
+dataTypes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/dataTypes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/dataTypes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.s
+.PHONY : dataTypes.cpp.s
+
 helloWorld.o: helloWorld.cpp.o
 
 .PHONY : helloWorld.o
@@ -218,8 +264,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... dataTypes"
 	@echo "... helloWorld"
 	@echo "... variables"
+	@echo "... dataTypes.o"
+	@echo "... dataTypes.i"
+	@echo "... dataTypes.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
