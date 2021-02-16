@@ -144,6 +144,19 @@ variables/fast:
 .PHONY : variables/fast
 
 #=============================================================================
+# Target rules for targets named numbers
+
+# Build rule for target.
+numbers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numbers
+.PHONY : numbers
+
+# fast build rule for target.
+numbers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/build
+.PHONY : numbers/fast
+
+#=============================================================================
 # Target rules for targets named strings
 
 # Build rule for target.
@@ -236,6 +249,33 @@ helloWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.s
 .PHONY : helloWorld.cpp.s
 
+numbers.o: numbers.cpp.o
+
+.PHONY : numbers.o
+
+# target to build an object file
+numbers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/numbers.cpp.o
+.PHONY : numbers.cpp.o
+
+numbers.i: numbers.cpp.i
+
+.PHONY : numbers.i
+
+# target to preprocess a source file
+numbers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/numbers.cpp.i
+.PHONY : numbers.cpp.i
+
+numbers.s: numbers.cpp.s
+
+.PHONY : numbers.s
+
+# target to generate assembly for a file
+numbers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/numbers.cpp.s
+.PHONY : numbers.cpp.s
+
 strings.o: strings.cpp.o
 
 .PHONY : strings.o
@@ -300,6 +340,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dataTypes"
 	@echo "... helloWorld"
+	@echo "... numbers"
 	@echo "... strings"
 	@echo "... variables"
 	@echo "... dataTypes.o"
@@ -308,6 +349,9 @@ help:
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
+	@echo "... numbers.o"
+	@echo "... numbers.i"
+	@echo "... numbers.s"
 	@echo "... strings.o"
 	@echo "... strings.i"
 	@echo "... strings.s"

@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/variables.dir/all
+all: CMakeFiles/numbers.dir/all
 all: CMakeFiles/strings.dir/all
 all: CMakeFiles/helloWorld.dir/all
 all: CMakeFiles/dataTypes.dir/all
@@ -87,6 +88,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/variables.dir/clean
+clean: CMakeFiles/numbers.dir/clean
 clean: CMakeFiles/strings.dir/clean
 clean: CMakeFiles/helloWorld.dir/clean
 clean: CMakeFiles/dataTypes.dir/clean
@@ -100,7 +102,7 @@ clean: CMakeFiles/dataTypes.dir/clean
 CMakeFiles/variables.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target variables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target variables"
 .PHONY : CMakeFiles/variables.dir/all
 
 # Build rule for subdir invocation for target.
@@ -121,13 +123,40 @@ CMakeFiles/variables.dir/clean:
 .PHONY : CMakeFiles/variables.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/numbers.dir
+
+# All Build rule for target.
+CMakeFiles/numbers.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target numbers"
+.PHONY : CMakeFiles/numbers.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/numbers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/numbers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/numbers.dir/rule
+
+# Convenience name for target.
+numbers: CMakeFiles/numbers.dir/rule
+
+.PHONY : numbers
+
+# clean rule for target.
+CMakeFiles/numbers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/clean
+.PHONY : CMakeFiles/numbers.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/strings.dir
 
 # All Build rule for target.
 CMakeFiles/strings.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target strings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target strings"
 .PHONY : CMakeFiles/strings.dir/all
 
 # Build rule for subdir invocation for target.

@@ -6,3 +6,9 @@
 
 #IncludeRegexTransform: 
 
+/Users/jaime/Coding/C++/LearnC++/numbers.cpp
+iostream
+-
+cmath
+-
+
