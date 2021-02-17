@@ -144,6 +144,19 @@ variables/fast:
 .PHONY : variables/fast
 
 #=============================================================================
+# Target rules for targets named userInput
+
+# Build rule for target.
+userInput: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 userInput
+.PHONY : userInput
+
+# fast build rule for target.
+userInput/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/build
+.PHONY : userInput/fast
+
+#=============================================================================
 # Target rules for targets named numbers
 
 # Build rule for target.
@@ -303,6 +316,33 @@ strings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/strings.cpp.s
 .PHONY : strings.cpp.s
 
+userInput.o: userInput.cpp.o
+
+.PHONY : userInput.o
+
+# target to build an object file
+userInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/userInput.cpp.o
+.PHONY : userInput.cpp.o
+
+userInput.i: userInput.cpp.i
+
+.PHONY : userInput.i
+
+# target to preprocess a source file
+userInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/userInput.cpp.i
+.PHONY : userInput.cpp.i
+
+userInput.s: userInput.cpp.s
+
+.PHONY : userInput.s
+
+# target to generate assembly for a file
+userInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/userInput.cpp.s
+.PHONY : userInput.cpp.s
+
 variables.o: variables.cpp.o
 
 .PHONY : variables.o
@@ -342,6 +382,7 @@ help:
 	@echo "... helloWorld"
 	@echo "... numbers"
 	@echo "... strings"
+	@echo "... userInput"
 	@echo "... variables"
 	@echo "... dataTypes.o"
 	@echo "... dataTypes.i"
@@ -355,6 +396,9 @@ help:
 	@echo "... strings.o"
 	@echo "... strings.i"
 	@echo "... strings.s"
+	@echo "... userInput.o"
+	@echo "... userInput.i"
+	@echo "... userInput.s"
 	@echo "... variables.o"
 	@echo "... variables.i"
 	@echo "... variables.s"

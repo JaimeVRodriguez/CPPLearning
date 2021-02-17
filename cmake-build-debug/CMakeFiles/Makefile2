@@ -74,6 +74,7 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/variables.dir/all
+all: CMakeFiles/userInput.dir/all
 all: CMakeFiles/numbers.dir/all
 all: CMakeFiles/strings.dir/all
 all: CMakeFiles/helloWorld.dir/all
@@ -88,6 +89,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/variables.dir/clean
+clean: CMakeFiles/userInput.dir/clean
 clean: CMakeFiles/numbers.dir/clean
 clean: CMakeFiles/strings.dir/clean
 clean: CMakeFiles/helloWorld.dir/clean
@@ -102,7 +104,7 @@ clean: CMakeFiles/dataTypes.dir/clean
 CMakeFiles/variables.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target variables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target variables"
 .PHONY : CMakeFiles/variables.dir/all
 
 # Build rule for subdir invocation for target.
@@ -121,6 +123,33 @@ variables: CMakeFiles/variables.dir/rule
 CMakeFiles/variables.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/clean
 .PHONY : CMakeFiles/variables.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/userInput.dir
+
+# All Build rule for target.
+CMakeFiles/userInput.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target userInput"
+.PHONY : CMakeFiles/userInput.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/userInput.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/userInput.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/userInput.dir/rule
+
+# Convenience name for target.
+userInput: CMakeFiles/userInput.dir/rule
+
+.PHONY : userInput
+
+# clean rule for target.
+CMakeFiles/userInput.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/clean
+.PHONY : CMakeFiles/userInput.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/numbers.dir

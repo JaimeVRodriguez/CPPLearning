@@ -1,4 +1,5 @@
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/variables.dir
+/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/userInput.dir
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/numbers.dir
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/strings.dir
