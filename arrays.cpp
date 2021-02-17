@@ -12,7 +12,7 @@ int main()
     luckyNums[0] = 19;
     // Access element
     cout << luckyNums[0] << endl;
-    
+
 
 
 

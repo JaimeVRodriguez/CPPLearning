@@ -183,17 +183,17 @@ numbers/fast:
 .PHONY : numbers/fast
 
 #=============================================================================
-# Target rules for targets named helloWorld
+# Target rules for targets named basicCalcualtor
 
 # Build rule for target.
-helloWorld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloWorld
-.PHONY : helloWorld
+basicCalcualtor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
+.PHONY : basicCalcualtor
 
 # fast build rule for target.
-helloWorld/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
-.PHONY : helloWorld/fast
+basicCalcualtor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
+.PHONY : basicCalcualtor/fast
 
 #=============================================================================
 # Target rules for targets named dataTypes
@@ -209,17 +209,30 @@ dataTypes/fast:
 .PHONY : dataTypes/fast
 
 #=============================================================================
-# Target rules for targets named basicCalcualtor
+# Target rules for targets named helloWorld
 
 # Build rule for target.
-basicCalcualtor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
-.PHONY : basicCalcualtor
+helloWorld: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloWorld
+.PHONY : helloWorld
 
 # fast build rule for target.
-basicCalcualtor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
-.PHONY : basicCalcualtor/fast
+helloWorld/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/build
+.PHONY : helloWorld/fast
+
+#=============================================================================
+# Target rules for targets named functions
+
+# Build rule for target.
+functions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions
+.PHONY : functions
+
+# fast build rule for target.
+functions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/build
+.PHONY : functions/fast
 
 #=============================================================================
 # Target rules for targets named arrays
@@ -314,6 +327,33 @@ dataTypes.s: dataTypes.cpp.s
 dataTypes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/dataTypes.cpp.s
 .PHONY : dataTypes.cpp.s
+
+functions.o: functions.cpp.o
+
+.PHONY : functions.o
+
+# target to build an object file
+functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/functions.cpp.o
+.PHONY : functions.cpp.o
+
+functions.i: functions.cpp.i
+
+.PHONY : functions.i
+
+# target to preprocess a source file
+functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/functions.cpp.i
+.PHONY : functions.cpp.i
+
+functions.s: functions.cpp.s
+
+.PHONY : functions.s
+
+# target to generate assembly for a file
+functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/functions.cpp.s
+.PHONY : functions.cpp.s
 
 helloWorld.o: helloWorld.cpp.o
 
@@ -461,6 +501,7 @@ help:
 	@echo "... arrays"
 	@echo "... basicCalcualtor"
 	@echo "... dataTypes"
+	@echo "... functions"
 	@echo "... helloWorld"
 	@echo "... numbers"
 	@echo "... strings"
@@ -475,6 +516,9 @@ help:
 	@echo "... dataTypes.o"
 	@echo "... dataTypes.i"
 	@echo "... dataTypes.s"
+	@echo "... functions.o"
+	@echo "... functions.i"
+	@echo "... functions.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"

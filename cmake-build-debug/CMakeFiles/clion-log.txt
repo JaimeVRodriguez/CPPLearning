@@ -2,6 +2,7 @@
     -- src/arrays.cpp will be compiled to bin/arrays
     -- src/basicCalcualtor.cpp will be compiled to bin/basicCalcualtor
     -- src/dataTypes.cpp will be compiled to bin/dataTypes
+    -- src/functions.cpp will be compiled to bin/functions
     -- src/helloWorld.cpp will be compiled to bin/helloWorld
     -- src/numbers.cpp will be compiled to bin/numbers
     -- src/strings.cpp will be compiled to bin/strings
