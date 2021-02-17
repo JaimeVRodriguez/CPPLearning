@@ -208,6 +208,46 @@ dataTypes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/build
 .PHONY : dataTypes/fast
 
+#=============================================================================
+# Target rules for targets named basicCalcualtor
+
+# Build rule for target.
+basicCalcualtor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
+.PHONY : basicCalcualtor
+
+# fast build rule for target.
+basicCalcualtor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
+.PHONY : basicCalcualtor/fast
+
+basicCalcualtor.o: basicCalcualtor.cpp.o
+
+.PHONY : basicCalcualtor.o
+
+# target to build an object file
+basicCalcualtor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/basicCalcualtor.cpp.o
+.PHONY : basicCalcualtor.cpp.o
+
+basicCalcualtor.i: basicCalcualtor.cpp.i
+
+.PHONY : basicCalcualtor.i
+
+# target to preprocess a source file
+basicCalcualtor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/basicCalcualtor.cpp.i
+.PHONY : basicCalcualtor.cpp.i
+
+basicCalcualtor.s: basicCalcualtor.cpp.s
+
+.PHONY : basicCalcualtor.s
+
+# target to generate assembly for a file
+basicCalcualtor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/basicCalcualtor.cpp.s
+.PHONY : basicCalcualtor.cpp.s
+
 dataTypes.o: dataTypes.cpp.o
 
 .PHONY : dataTypes.o
@@ -378,12 +418,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... basicCalcualtor"
 	@echo "... dataTypes"
 	@echo "... helloWorld"
 	@echo "... numbers"
 	@echo "... strings"
 	@echo "... userInput"
 	@echo "... variables"
+	@echo "... basicCalcualtor.o"
+	@echo "... basicCalcualtor.i"
+	@echo "... basicCalcualtor.s"
 	@echo "... dataTypes.o"
 	@echo "... dataTypes.i"
 	@echo "... dataTypes.s"

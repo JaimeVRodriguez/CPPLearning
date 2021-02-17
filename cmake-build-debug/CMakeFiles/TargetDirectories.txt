@@ -6,3 +6,4 @@
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/helloWorld.dir
 /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/dataTypes.dir
+/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles/basicCalcualtor.dir

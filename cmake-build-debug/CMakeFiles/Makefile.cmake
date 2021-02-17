@@ -58,4 +58,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/strings.dir/DependInfo.cmake"
   "CMakeFiles/helloWorld.dir/DependInfo.cmake"
   "CMakeFiles/dataTypes.dir/DependInfo.cmake"
+  "CMakeFiles/basicCalcualtor.dir/DependInfo.cmake"
   )
