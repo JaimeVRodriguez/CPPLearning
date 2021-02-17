@@ -54,9 +54,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/variables.dir/DependInfo.cmake"
   "CMakeFiles/userInput.dir/DependInfo.cmake"
-  "CMakeFiles/numbers.dir/DependInfo.cmake"
   "CMakeFiles/strings.dir/DependInfo.cmake"
+  "CMakeFiles/numbers.dir/DependInfo.cmake"
   "CMakeFiles/helloWorld.dir/DependInfo.cmake"
   "CMakeFiles/dataTypes.dir/DependInfo.cmake"
   "CMakeFiles/basicCalcualtor.dir/DependInfo.cmake"
+  "CMakeFiles/arrays.dir/DependInfo.cmake"
   )

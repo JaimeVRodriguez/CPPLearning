@@ -157,19 +157,6 @@ userInput/fast:
 .PHONY : userInput/fast
 
 #=============================================================================
-# Target rules for targets named numbers
-
-# Build rule for target.
-numbers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numbers
-.PHONY : numbers
-
-# fast build rule for target.
-numbers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/build
-.PHONY : numbers/fast
-
-#=============================================================================
 # Target rules for targets named strings
 
 # Build rule for target.
@@ -181,6 +168,19 @@ strings: cmake_check_build_system
 strings/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/build
 .PHONY : strings/fast
+
+#=============================================================================
+# Target rules for targets named numbers
+
+# Build rule for target.
+numbers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numbers
+.PHONY : numbers
+
+# fast build rule for target.
+numbers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/numbers.dir/build.make CMakeFiles/numbers.dir/build
+.PHONY : numbers/fast
 
 #=============================================================================
 # Target rules for targets named helloWorld
@@ -220,6 +220,46 @@ basicCalcualtor: cmake_check_build_system
 basicCalcualtor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
 .PHONY : basicCalcualtor/fast
+
+#=============================================================================
+# Target rules for targets named arrays
+
+# Build rule for target.
+arrays: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arrays
+.PHONY : arrays
+
+# fast build rule for target.
+arrays/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/build
+.PHONY : arrays/fast
+
+arrays.o: arrays.cpp.o
+
+.PHONY : arrays.o
+
+# target to build an object file
+arrays.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/arrays.cpp.o
+.PHONY : arrays.cpp.o
+
+arrays.i: arrays.cpp.i
+
+.PHONY : arrays.i
+
+# target to preprocess a source file
+arrays.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/arrays.cpp.i
+.PHONY : arrays.cpp.i
+
+arrays.s: arrays.cpp.s
+
+.PHONY : arrays.s
+
+# target to generate assembly for a file
+arrays.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrays.dir/build.make CMakeFiles/arrays.dir/arrays.cpp.s
+.PHONY : arrays.cpp.s
 
 basicCalcualtor.o: basicCalcualtor.cpp.o
 
@@ -418,6 +458,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... arrays"
 	@echo "... basicCalcualtor"
 	@echo "... dataTypes"
 	@echo "... helloWorld"
@@ -425,6 +466,9 @@ help:
 	@echo "... strings"
 	@echo "... userInput"
 	@echo "... variables"
+	@echo "... arrays.o"
+	@echo "... arrays.i"
+	@echo "... arrays.s"
 	@echo "... basicCalcualtor.o"
 	@echo "... basicCalcualtor.i"
 	@echo "... basicCalcualtor.s"
