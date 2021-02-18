@@ -4,6 +4,7 @@
     -- src/dataTypes.cpp will be compiled to bin/dataTypes
     -- src/functions.cpp will be compiled to bin/functions
     -- src/helloWorld.cpp will be compiled to bin/helloWorld
+    -- src/ifStatements.cpp will be compiled to bin/ifStatements
     -- src/numbers.cpp will be compiled to bin/numbers
     -- src/strings.cpp will be compiled to bin/strings
     -- src/userInput.cpp will be compiled to bin/userInput

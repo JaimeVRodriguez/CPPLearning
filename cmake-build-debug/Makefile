@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -97,6 +86,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -170,6 +170,19 @@ strings/fast:
 .PHONY : strings/fast
 
 #=============================================================================
+# Target rules for targets named basicCalcualtor
+
+# Build rule for target.
+basicCalcualtor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
+.PHONY : basicCalcualtor
+
+# fast build rule for target.
+basicCalcualtor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
+.PHONY : basicCalcualtor/fast
+
+#=============================================================================
 # Target rules for targets named numbers
 
 # Build rule for target.
@@ -183,17 +196,17 @@ numbers/fast:
 .PHONY : numbers/fast
 
 #=============================================================================
-# Target rules for targets named basicCalcualtor
+# Target rules for targets named ifStatements
 
 # Build rule for target.
-basicCalcualtor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
-.PHONY : basicCalcualtor
+ifStatements: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ifStatements
+.PHONY : ifStatements
 
 # fast build rule for target.
-basicCalcualtor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
-.PHONY : basicCalcualtor/fast
+ifStatements/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ifStatements.dir/build.make CMakeFiles/ifStatements.dir/build
+.PHONY : ifStatements/fast
 
 #=============================================================================
 # Target rules for targets named dataTypes
@@ -382,6 +395,33 @@ helloWorld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/helloWorld.cpp.s
 .PHONY : helloWorld.cpp.s
 
+ifStatements.o: ifStatements.cpp.o
+
+.PHONY : ifStatements.o
+
+# target to build an object file
+ifStatements.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ifStatements.dir/build.make CMakeFiles/ifStatements.dir/ifStatements.cpp.o
+.PHONY : ifStatements.cpp.o
+
+ifStatements.i: ifStatements.cpp.i
+
+.PHONY : ifStatements.i
+
+# target to preprocess a source file
+ifStatements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ifStatements.dir/build.make CMakeFiles/ifStatements.dir/ifStatements.cpp.i
+.PHONY : ifStatements.cpp.i
+
+ifStatements.s: ifStatements.cpp.s
+
+.PHONY : ifStatements.s
+
+# target to generate assembly for a file
+ifStatements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ifStatements.dir/build.make CMakeFiles/ifStatements.dir/ifStatements.cpp.s
+.PHONY : ifStatements.cpp.s
+
 numbers.o: numbers.cpp.o
 
 .PHONY : numbers.o
@@ -503,6 +543,7 @@ help:
 	@echo "... dataTypes"
 	@echo "... functions"
 	@echo "... helloWorld"
+	@echo "... ifStatements"
 	@echo "... numbers"
 	@echo "... strings"
 	@echo "... userInput"
@@ -522,6 +563,9 @@ help:
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"
+	@echo "... ifStatements.o"
+	@echo "... ifStatements.i"
+	@echo "... ifStatements.s"
 	@echo "... numbers.o"
 	@echo "... numbers.i"
 	@echo "... numbers.s"
