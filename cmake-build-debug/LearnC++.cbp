@@ -17,6 +17,48 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="whileLoop">
+				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/whileLoop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 whileLoop"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="whileLoop/fast">
+				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/whileLoop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 whileLoop/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="variables">
 				<Option output="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/variables" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/jaime/Coding/C++/LearnC++/cmake-build-debug"/>
@@ -532,6 +574,9 @@
 		</Unit>
 		<Unit filename="/Users/jaime/Coding/C++/LearnC++/variables.cpp">
 			<Option target="variables"/>
+		</Unit>
+		<Unit filename="/Users/jaime/Coding/C++/LearnC++/whileLoop.cpp">
+			<Option target="whileLoop"/>
 		</Unit>
 		<Unit filename="/Users/jaime/Coding/C++/LearnC++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

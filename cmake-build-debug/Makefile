@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named whileLoop
+
+# Build rule for target.
+whileLoop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 whileLoop
+.PHONY : whileLoop
+
+# fast build rule for target.
+whileLoop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whileLoop.dir/build.make CMakeFiles/whileLoop.dir/build
+.PHONY : whileLoop/fast
+
+#=============================================================================
 # Target rules for targets named variables
 
 # Build rule for target.
@@ -570,6 +583,33 @@ variables.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/variables.cpp.s
 .PHONY : variables.cpp.s
 
+whileLoop.o: whileLoop.cpp.o
+
+.PHONY : whileLoop.o
+
+# target to build an object file
+whileLoop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whileLoop.dir/build.make CMakeFiles/whileLoop.dir/whileLoop.cpp.o
+.PHONY : whileLoop.cpp.o
+
+whileLoop.i: whileLoop.cpp.i
+
+.PHONY : whileLoop.i
+
+# target to preprocess a source file
+whileLoop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whileLoop.dir/build.make CMakeFiles/whileLoop.dir/whileLoop.cpp.i
+.PHONY : whileLoop.cpp.i
+
+whileLoop.s: whileLoop.cpp.s
+
+.PHONY : whileLoop.s
+
+# target to generate assembly for a file
+whileLoop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/whileLoop.dir/build.make CMakeFiles/whileLoop.dir/whileLoop.cpp.s
+.PHONY : whileLoop.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -589,6 +629,7 @@ help:
 	@echo "... switchStatements"
 	@echo "... userInput"
 	@echo "... variables"
+	@echo "... whileLoop"
 	@echo "... arrays.o"
 	@echo "... arrays.i"
 	@echo "... arrays.s"
@@ -622,6 +663,9 @@ help:
 	@echo "... variables.o"
 	@echo "... variables.i"
 	@echo "... variables.s"
+	@echo "... whileLoop.o"
+	@echo "... whileLoop.i"
+	@echo "... whileLoop.s"
 .PHONY : help
 
 

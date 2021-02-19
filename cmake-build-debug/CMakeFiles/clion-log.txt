@@ -10,6 +10,7 @@
     -- src/switchStatements.cpp will be compiled to bin/switchStatements
     -- src/userInput.cpp will be compiled to bin/userInput
     -- src/variables.cpp will be compiled to bin/variables
+    -- src/whileLoop.cpp will be compiled to bin/whileLoop
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
