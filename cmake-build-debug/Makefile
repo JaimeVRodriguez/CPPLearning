@@ -209,6 +209,32 @@ ifStatements/fast:
 .PHONY : ifStatements/fast
 
 #=============================================================================
+# Target rules for targets named guessingGame
+
+# Build rule for target.
+guessingGame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 guessingGame
+.PHONY : guessingGame
+
+# fast build rule for target.
+guessingGame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/guessingGame.dir/build.make CMakeFiles/guessingGame.dir/build
+.PHONY : guessingGame/fast
+
+#=============================================================================
+# Target rules for targets named functions
+
+# Build rule for target.
+functions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions
+.PHONY : functions
+
+# fast build rule for target.
+functions/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/build
+.PHONY : functions/fast
+
+#=============================================================================
 # Target rules for targets named switchStatements
 
 # Build rule for target.
@@ -220,32 +246,6 @@ switchStatements: cmake_check_build_system
 switchStatements/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/build
 .PHONY : switchStatements/fast
-
-#=============================================================================
-# Target rules for targets named basicCalcualtor
-
-# Build rule for target.
-basicCalcualtor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
-.PHONY : basicCalcualtor
-
-# fast build rule for target.
-basicCalcualtor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
-.PHONY : basicCalcualtor/fast
-
-#=============================================================================
-# Target rules for targets named dataTypes
-
-# Build rule for target.
-dataTypes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dataTypes
-.PHONY : dataTypes
-
-# fast build rule for target.
-dataTypes/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/build
-.PHONY : dataTypes/fast
 
 #=============================================================================
 # Target rules for targets named helloWorld
@@ -261,17 +261,30 @@ helloWorld/fast:
 .PHONY : helloWorld/fast
 
 #=============================================================================
-# Target rules for targets named functions
+# Target rules for targets named dataTypes
 
 # Build rule for target.
-functions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 functions
-.PHONY : functions
+dataTypes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dataTypes
+.PHONY : dataTypes
 
 # fast build rule for target.
-functions/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/build
-.PHONY : functions/fast
+dataTypes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataTypes.dir/build.make CMakeFiles/dataTypes.dir/build
+.PHONY : dataTypes/fast
+
+#=============================================================================
+# Target rules for targets named basicCalcualtor
+
+# Build rule for target.
+basicCalcualtor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
+.PHONY : basicCalcualtor
+
+# fast build rule for target.
+basicCalcualtor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
+.PHONY : basicCalcualtor/fast
 
 #=============================================================================
 # Target rules for targets named arrays
@@ -393,6 +406,33 @@ functions.s: functions.cpp.s
 functions.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/functions.dir/build.make CMakeFiles/functions.dir/functions.cpp.s
 .PHONY : functions.cpp.s
+
+guessingGame.o: guessingGame.cpp.o
+
+.PHONY : guessingGame.o
+
+# target to build an object file
+guessingGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/guessingGame.dir/build.make CMakeFiles/guessingGame.dir/guessingGame.cpp.o
+.PHONY : guessingGame.cpp.o
+
+guessingGame.i: guessingGame.cpp.i
+
+.PHONY : guessingGame.i
+
+# target to preprocess a source file
+guessingGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/guessingGame.dir/build.make CMakeFiles/guessingGame.dir/guessingGame.cpp.i
+.PHONY : guessingGame.cpp.i
+
+guessingGame.s: guessingGame.cpp.s
+
+.PHONY : guessingGame.s
+
+# target to generate assembly for a file
+guessingGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/guessingGame.dir/build.make CMakeFiles/guessingGame.dir/guessingGame.cpp.s
+.PHONY : guessingGame.cpp.s
 
 helloWorld.o: helloWorld.cpp.o
 
@@ -622,6 +662,7 @@ help:
 	@echo "... basicCalcualtor"
 	@echo "... dataTypes"
 	@echo "... functions"
+	@echo "... guessingGame"
 	@echo "... helloWorld"
 	@echo "... ifStatements"
 	@echo "... numbers"
@@ -642,6 +683,9 @@ help:
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"
+	@echo "... guessingGame.o"
+	@echo "... guessingGame.i"
+	@echo "... guessingGame.s"
 	@echo "... helloWorld.o"
 	@echo "... helloWorld.i"
 	@echo "... helloWorld.s"

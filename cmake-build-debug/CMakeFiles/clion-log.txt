@@ -3,6 +3,7 @@
     -- src/basicCalcualtor.cpp will be compiled to bin/basicCalcualtor
     -- src/dataTypes.cpp will be compiled to bin/dataTypes
     -- src/functions.cpp will be compiled to bin/functions
+    -- src/guessingGame.cpp will be compiled to bin/guessingGame
     -- src/helloWorld.cpp will be compiled to bin/helloWorld
     -- src/ifStatements.cpp will be compiled to bin/ifStatements
     -- src/numbers.cpp will be compiled to bin/numbers
