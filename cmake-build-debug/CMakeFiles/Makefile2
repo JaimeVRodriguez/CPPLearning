@@ -76,9 +76,10 @@ CMAKE_BINARY_DIR = /Users/jaime/Coding/C++/LearnC++/cmake-build-debug
 all: CMakeFiles/variables.dir/all
 all: CMakeFiles/userInput.dir/all
 all: CMakeFiles/strings.dir/all
-all: CMakeFiles/basicCalcualtor.dir/all
 all: CMakeFiles/numbers.dir/all
 all: CMakeFiles/ifStatements.dir/all
+all: CMakeFiles/switchStatements.dir/all
+all: CMakeFiles/basicCalcualtor.dir/all
 all: CMakeFiles/dataTypes.dir/all
 all: CMakeFiles/helloWorld.dir/all
 all: CMakeFiles/functions.dir/all
@@ -95,9 +96,10 @@ preinstall:
 clean: CMakeFiles/variables.dir/clean
 clean: CMakeFiles/userInput.dir/clean
 clean: CMakeFiles/strings.dir/clean
-clean: CMakeFiles/basicCalcualtor.dir/clean
 clean: CMakeFiles/numbers.dir/clean
 clean: CMakeFiles/ifStatements.dir/clean
+clean: CMakeFiles/switchStatements.dir/clean
+clean: CMakeFiles/basicCalcualtor.dir/clean
 clean: CMakeFiles/dataTypes.dir/clean
 clean: CMakeFiles/helloWorld.dir/clean
 clean: CMakeFiles/functions.dir/clean
@@ -112,7 +114,7 @@ clean: CMakeFiles/arrays.dir/clean
 CMakeFiles/variables.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables.dir/build.make CMakeFiles/variables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target variables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target variables"
 .PHONY : CMakeFiles/variables.dir/all
 
 # Build rule for subdir invocation for target.
@@ -139,7 +141,7 @@ CMakeFiles/variables.dir/clean:
 CMakeFiles/userInput.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/userInput.dir/build.make CMakeFiles/userInput.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target userInput"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target userInput"
 .PHONY : CMakeFiles/userInput.dir/all
 
 # Build rule for subdir invocation for target.
@@ -185,33 +187,6 @@ strings: CMakeFiles/strings.dir/rule
 CMakeFiles/strings.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/clean
 .PHONY : CMakeFiles/strings.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/basicCalcualtor.dir
-
-# All Build rule for target.
-CMakeFiles/basicCalcualtor.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target basicCalcualtor"
-.PHONY : CMakeFiles/basicCalcualtor.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/basicCalcualtor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/basicCalcualtor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/basicCalcualtor.dir/rule
-
-# Convenience name for target.
-basicCalcualtor: CMakeFiles/basicCalcualtor.dir/rule
-
-.PHONY : basicCalcualtor
-
-# clean rule for target.
-CMakeFiles/basicCalcualtor.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/clean
-.PHONY : CMakeFiles/basicCalcualtor.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/numbers.dir
@@ -266,6 +241,60 @@ ifStatements: CMakeFiles/ifStatements.dir/rule
 CMakeFiles/ifStatements.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ifStatements.dir/build.make CMakeFiles/ifStatements.dir/clean
 .PHONY : CMakeFiles/ifStatements.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/switchStatements.dir
+
+# All Build rule for target.
+CMakeFiles/switchStatements.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target switchStatements"
+.PHONY : CMakeFiles/switchStatements.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/switchStatements.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/switchStatements.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/switchStatements.dir/rule
+
+# Convenience name for target.
+switchStatements: CMakeFiles/switchStatements.dir/rule
+
+.PHONY : switchStatements
+
+# clean rule for target.
+CMakeFiles/switchStatements.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/clean
+.PHONY : CMakeFiles/switchStatements.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/basicCalcualtor.dir
+
+# All Build rule for target.
+CMakeFiles/basicCalcualtor.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target basicCalcualtor"
+.PHONY : CMakeFiles/basicCalcualtor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/basicCalcualtor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/basicCalcualtor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jaime/Coding/C++/LearnC++/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/basicCalcualtor.dir/rule
+
+# Convenience name for target.
+basicCalcualtor: CMakeFiles/basicCalcualtor.dir/rule
+
+.PHONY : basicCalcualtor
+
+# clean rule for target.
+CMakeFiles/basicCalcualtor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/clean
+.PHONY : CMakeFiles/basicCalcualtor.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/dataTypes.dir

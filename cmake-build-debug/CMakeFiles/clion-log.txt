@@ -7,6 +7,7 @@
     -- src/ifStatements.cpp will be compiled to bin/ifStatements
     -- src/numbers.cpp will be compiled to bin/numbers
     -- src/strings.cpp will be compiled to bin/strings
+    -- src/switchStatements.cpp will be compiled to bin/switchStatements
     -- src/userInput.cpp will be compiled to bin/userInput
     -- src/variables.cpp will be compiled to bin/variables
 -- Configuring done

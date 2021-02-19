@@ -170,19 +170,6 @@ strings/fast:
 .PHONY : strings/fast
 
 #=============================================================================
-# Target rules for targets named basicCalcualtor
-
-# Build rule for target.
-basicCalcualtor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
-.PHONY : basicCalcualtor
-
-# fast build rule for target.
-basicCalcualtor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
-.PHONY : basicCalcualtor/fast
-
-#=============================================================================
 # Target rules for targets named numbers
 
 # Build rule for target.
@@ -207,6 +194,32 @@ ifStatements: cmake_check_build_system
 ifStatements/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ifStatements.dir/build.make CMakeFiles/ifStatements.dir/build
 .PHONY : ifStatements/fast
+
+#=============================================================================
+# Target rules for targets named switchStatements
+
+# Build rule for target.
+switchStatements: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 switchStatements
+.PHONY : switchStatements
+
+# fast build rule for target.
+switchStatements/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/build
+.PHONY : switchStatements/fast
+
+#=============================================================================
+# Target rules for targets named basicCalcualtor
+
+# Build rule for target.
+basicCalcualtor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basicCalcualtor
+.PHONY : basicCalcualtor
+
+# fast build rule for target.
+basicCalcualtor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basicCalcualtor.dir/build.make CMakeFiles/basicCalcualtor.dir/build
+.PHONY : basicCalcualtor/fast
 
 #=============================================================================
 # Target rules for targets named dataTypes
@@ -476,6 +489,33 @@ strings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/strings.dir/build.make CMakeFiles/strings.dir/strings.cpp.s
 .PHONY : strings.cpp.s
 
+switchStatements.o: switchStatements.cpp.o
+
+.PHONY : switchStatements.o
+
+# target to build an object file
+switchStatements.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/switchStatements.cpp.o
+.PHONY : switchStatements.cpp.o
+
+switchStatements.i: switchStatements.cpp.i
+
+.PHONY : switchStatements.i
+
+# target to preprocess a source file
+switchStatements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/switchStatements.cpp.i
+.PHONY : switchStatements.cpp.i
+
+switchStatements.s: switchStatements.cpp.s
+
+.PHONY : switchStatements.s
+
+# target to generate assembly for a file
+switchStatements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/switchStatements.dir/build.make CMakeFiles/switchStatements.dir/switchStatements.cpp.s
+.PHONY : switchStatements.cpp.s
+
 userInput.o: userInput.cpp.o
 
 .PHONY : userInput.o
@@ -546,6 +586,7 @@ help:
 	@echo "... ifStatements"
 	@echo "... numbers"
 	@echo "... strings"
+	@echo "... switchStatements"
 	@echo "... userInput"
 	@echo "... variables"
 	@echo "... arrays.o"
@@ -572,6 +613,9 @@ help:
 	@echo "... strings.o"
 	@echo "... strings.i"
 	@echo "... strings.s"
+	@echo "... switchStatements.o"
+	@echo "... switchStatements.i"
+	@echo "... switchStatements.s"
 	@echo "... userInput.o"
 	@echo "... userInput.i"
 	@echo "... userInput.s"
